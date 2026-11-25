@@ -454,13 +454,17 @@ Il n'est pas nécessaire d'activer manuellement cet environnement virtuel lors d
 
 ## 3.8. Installation et démarrage de SEM Transcription
 
-Une fois les différents moteurs d'intelligence artificielle et leurs modèles installés, procéder à l'installation de l'application SEM Transcription.
+## 8. Téléchargement
 
-### Téléchargement de l'application
+Le code source de l'application est disponible dans le dossier `sem_app`.
 
-Télécharger l'archive `sem_transcription.zip` depuis le dépôt GitHub du projet SEM Transcription.
+Une archive ZIP contenant les fichiers nécessaires à l'installation de SEM Transcription est disponible dans la section Releases du dépôt.
 
-**Lien de téléchargement :** à venir dans la section Releases du dépôt.
+- [Télécharger SEM Transcription (.zip)](https://github.com/pabloaguilerator/sem-transcription/releases/download/v1.0.0-rc.1/sem_transcription.zip)
+- [Consulter les versions disponibles](https://github.com/pabloaguilerator/sem-transcription/releases)
+- [Consulter le guide d'installation](docs/03-installation.md)
+
+Version actuellement disponible : v1.0.0-rc.1.
 
 Enregistrer l'archive dans le dossier `Downloads` du Raspberry Pi.
 
