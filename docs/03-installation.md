@@ -205,21 +205,26 @@ git checkout af6b5243d6871923dfecbe06814bd566d9dc383b
 
 ### Compilation
 
-Configurer la compilation avec la prise en charge des connexions HTTPS :
+Configurer la compilation avec la prise en charge des connexions HTTPS et sans interface web intégrée. SEM Transcription utilise uniquement l'API locale du serveur llama.cpp.
 
 ```bash
 cmake -S . -B build \
   -DCMAKE_BUILD_TYPE=Release \
-  -DLLAMA_OPENSSL=ON
+  -DLLAMA_OPENSSL=ON \
+  -DLLAMA_BUILD_SERVER=ON \
+  -DLLAMA_BUILD_UI=OFF \
+  -DLLAMA_USE_PREBUILT_UI=OFF
 ```
 
-Lancer la compilation :
+Lancer la compilation du serveur :
 
 ```bash
-cmake --build build --config Release -j4
+cmake --build build --config Release --target llama-server -j4
 ```
 
 Cette opération peut prendre plusieurs minutes.
+
+**Remarque :** un avertissement indiquant l'absence d'interface web intégrée peut apparaître pendant la compilation. Cet avertissement est normal et n'empêche pas le fonctionnement du serveur.
 
 ### Vérification
 
